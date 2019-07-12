@@ -1,0 +1,87 @@
+body{
+    background-color:#00ffff;
+}
+.profile {
+    background-color: #ffffff;
+    width: 320px;
+    height: 720px;
+    border-radius: 4px;
+    margin-top:50px;
+}
+.img{
+    width:50%
+}
+.experience{
+    margin-top:30px;
+    margin-right:60px;
+}
+
+.skills{
+    margin-top:30px;
+    background-color:#ffffff;
+    width: 683px;
+    height: 256px;
+    border-radius: 4px;
+    margin-left:-100px;
+}
+
+.btn-group {
+    margin-top: 100px;
+    width: 688px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: var(--white);
+    margin-right:60px;
+}
+
+
+
+.button{
+    position:absolute;
+    text-align:right;
+}
+
+.search input[type=text]{
+  width: 90%;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+}
+
+.line {
+    width:1;
+    height:480;
+    background-color: #c4c4c4;
+}
+/* logo */
+.rectangle {
+    width: 200px;
+    height: 64px;
+    background-color: var(--orange);
+}
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration:none;
+        font-size: 15px;
+        color: #ffffff ;
+        display: block;
+        text-align:left;
+        
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+@media(min-widht:321px) and (max-width:425px)

@@ -1,0 +1,258 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="project2.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    </head>
+    <body style="background-color:#f3f3f3">
+        <nav class="navbar navbar-expand-md bg-white navbar-light justify-content-between" style="background-color:#ffffff">
+            <form class="form-inline" action="/action_page.php">
+                <div class="search">
+                    <input class="form-control" style="margin-left:170px" type="text" placeholder="Search">
+                </div>
+                <a href="" style="margin-left:120px"><i class="fas fa-search" aria-hidden="true" style="margin-left:28px"></i></a>
+            </form>
+            <ul class="navbar-nav" style="background-color:#ffffff">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><span style="margin-right: 10px"><i class="fas fa-user-circle fa-lg"></i></span><b>Kevin</b> Alkern<span><i class="fas fa-chevron-down" style="margin-left: 20px"></i></span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidenav" style="font-size:20">
+                    <div class="rectangle" style="margin-top:-20px">
+                        <div class="img">
+                            <img src="mindzzle1.png" alt="Logo">
+                        </div>
+                    </div>
+                    <h3 class="menu"style="color:white;font-size:15px;margin-top:10px">MainMenu</h3>
+                    <a href="profile.html" class="w3-bar-item w3-button"><i class="fas fa-building fa-md"></i> Profile</a>
+                    <a href="Dashboard.html" class="w3-bar-item w3-button"><i class="fas fa-chart-bar fa-md"></i> Dashboard</a>
+                    <a href="Employee.html" class="w3-bar-item w3-button"><i class="fa fa-user fa-md fa-md" aria-hidden="true"style="margin-right:5px"></i>Employee</a>
+                    <a href="Hierarchy.html" class="w3-bar-item w3-button"><i class="fas fa-user-friends fa-md"></i> hierarchy</a>
+                    <a href="Jobposting.html" class="w3-bar-item w3-button"><i class="fas fa-list-ul fa-md"></i> Job Posting</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="btn" style="margin-top:30px;margin-left:3px">
+                        <button type="button" class="btn btn-primary" style="height:40px;width:156px" data-toggle="modal" data-target="#myModal">+Add New Vacancy</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="row">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>Add New Vacancy</h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class=" row m-3">
+                                        <div class="col-sm-6">
+                                            <div class="employee" style="margin-bottom:5px">
+                                                <h6>Choose employee e-mail</h6>
+                                                <select name="cars" style="width: 368px;height:32px">
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="fiat">Fiat</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                            </div>
+                                            <br />
+                                            <h6><b>User info</b></h6>
+                                            <hr />
+                                            <div class=" row">
+                                                <div class="container">
+                                                    <form action="/action_page.php">
+                                                        <div class="form-group">
+                                                            <label for="email">Name:</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Full Name" name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Phone Number:</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Phone Number" name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Address:</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Address" name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Birthday:</label>
+                                                            <input type="date" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="employee" style="margin-bottom:5px">
+                                                <h6>Contract Info</h6>
+                                            </div>
+                                            <hr />
+                                            <div class=" row">
+                                                <div class="container">
+                                                    <form action="/action_page.php">
+                                                        <div class="form-group">
+                                                            <label for="email">Contract Type:</label>
+                                                            <select name="cars" style="width:  368px;height:32px">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="fiat">Fiat</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Set Hierarchy:</label>
+                                                            <select name="cars" style="width:  368px;height:32px">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="fiat">Fiat</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Date In:</label>
+                                                            <input type="date" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Date Out:</label>
+                                                            <input type="date" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email">Salary:</label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Discard</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Modal -->
+                        <div class="modal fade" id="Modal" role="dialog">
+                            <div class="modal-dialog modal-lg">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>Add Employee Manually</h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body text-center "style="margin:auto">
+                                        <div class="addEmployeManually">
+                                            <div class="btn1">
+                                                <button type="button" class="btn btn-outline-primary btn1"style="border-radius: 16px"><img src="download.png" alt="Logo download"style="width:72px;height:72px"><span style="margin-left:15px;font-size:18px">Download.csv template</span></button>
+                                            </div>
+                                            <div class="or mt-3 mb-3">
+                                                <h5>OR  </h5>
+                                            </div>
+                                            <div class="btn2">
+                                                <button type="button" class="btn btn-outline-dark btn2" style="border-radius: 16px"><img src="upload.png" alt="Logo upload" style="width:72px;height:72px"><span style="margin-left:15px;font-size:18px">Upload.csv template</spanstyle="margin-left:15px"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"style="margin-top:20px">
+                    <div class="table-responsive-md text-left" style="margin-left:10px;margin-right:10px">
+                        <table class="table" id="table" >
+                            <thead>
+                                <tr>
+                                    <span style="text-align:center"><h5>Job List</h5></span>
+                                </tr>
+                                <tr>
+                                    <th>Position</th>
+                                    <th>Job Status</th>
+                                    <th>Exp.Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UX Designer</td>
+                                    <td>Full Time</td>
+                                    <td>20/04/2019</td>
+                                    <td><button type="button" class="btn btn-primary">View Candidates</button><button type="button" class="btn btn-outline-dark" style="margin-left:15px">Close Vacancy</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Front-End Engineer</td>
+                                    <td>Full Time</td>
+                                    <td>20/04/2019</td>
+                                    <td><button type="button" class="btn btn-primary">View Candidates</button><button type="button" class="btn btn-outline-dark" style="margin-left:15px">Close Vacancy</button></td>
+                                </tr>
+                                <tr>
+                                    <td>DevOps</td>
+                                    <td>Full Time</td>
+                                    <td>19/02/2020</td>
+                                    <td><button type="button" class="btn btn-primary">View Candidates</button><button type="button" class="btn btn-outline-dark" style="margin-left:15px">Close Vacancy</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Product Manager</td>
+                                    <td>Full Time</td>
+                                    <td>31/01/2020</td>
+                                    <td><button type="button" class="btn btn-primary">View Candidates</button><button type="button" class="btn btn-outline-dark" style="margin-left:15px">Close Vacancy</button></td>
+                                </tr>
+                                <tr>
+                                    <td>UX Designer</td>
+                                    <td>Iternship</td>
+                                    <td>20/04/2019</td>
+                                    <td><button type="button" class="btn btn-primary">View Candidates</button><button type="button" class="btn btn-outline-dark" style="margin-left:15px">Close Vacancy</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Back-End-Engineer</td>
+                                    <td>Full Time</td>
+                                    <td>20/04/2019</td>
+                                    <td><button type="button" class="btn btn-primary">View Candidates</button><button type="button" class="btn btn-outline-dark" style="margin-left:15px">Close Vacancy</button></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#table').dataTable();
+            });
+        </script>
+    </body>
+
+
+    </html>

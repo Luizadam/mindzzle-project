@@ -1,0 +1,188 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Dashboard.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    </head>
+    <body style="background-color:#f3f3f3">
+        <nav class="navbar navbar-expand-md bg-white navbar-light justify-content-between" style="background-color:#ffffff">
+            <form class="form-inline" action="/action_page.php">
+                <div class="search">
+                    <input class="form-control" style="margin-left:170px" type="text" placeholder="Search">
+                </div>
+                <a href="" style="margin-left:120px"><i class="fas fa-search" aria-hidden="true" style="margin-left:28px"></i></a>
+            </form>
+            <ul class="navbar-nav" style="background-color:#ffffff">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><span style="margin-right: 10px"><i class="fas fa-user-circle fa-lg"></i></span><b>Kevin</b> Alkern<span><i class="fas fa-chevron-down" style="margin-left: 20px"></i></span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidenav" style="font-size:20">
+                    <div class="rectangle" style="margin-top:-20px">
+                        <div class="img">
+                            <img src="mindzzle1.png" alt="Logo">
+                        </div>
+                    </div>
+                    <h3 class="menu" style="color:white;font-size:15px;margin-top:10px">MainMenu</h3>
+                    <a href="profile.html" class="w3-bar-item w3-button"><i class="fas fa-building fa-md"></i> Profile</a>
+                    <a href="Dashboard.html" class="w3-bar-item w3-button"><i class="fas fa-chart-bar fa-md"></i> Dashboard</a>
+                    <a href="Employee.html" class="w3-bar-item w3-button"><i class="fa fa-user fa-md fa-md" aria-hidden="true" style="margin-right:5px"></i>Employee</a>
+                    <a href="Hierarchy.html" class="w3-bar-item w3-button"><i class="fas fa-user-friends fa-md"></i> hierarchy</a>
+                    <a href="Jobposting.html" class="w3-bar-item w3-button"><i class="fas fa-list-ul fa-md"></i> Job Posting</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class ="row"style="margin-left:-60px;margin-top:20px">
+                    <div class="col-md-3">
+                        <div class="rectangle1">
+                                <div class="row mt-auto mb-auto">
+                                        <div class="col-md-4">
+                                            <img src="Headcount.png" alt="Logo"style="width: 64px;
+                                            height: 64px;
+                                            object-fit: contain;margin-top:40px;margin-left:10px">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="text"style="text-align:right;margin-right:20px;margin-top:40px">
+                                                <h5>350</h5>
+                                                <p>Headcount</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="rectangle2">
+                                <div class="row">
+                                        <div class="col-md-4"style="margin-top:40px">
+                                                <spen style="color: #ffffff;margin-left:10px"><i class="far fa-id-badge fa-4x"></i></spen>
+                                        </div>
+                                        <div class="col-md-8">
+                                                <div class="text"style="text-align:right;margin-right:20px;margin-top:10px">
+                                                    <h5>320</h5>
+                                                    <p>Permanent</p>
+                                                    <h5>30</h5>
+                                                    <p>Temporary</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="rectangle3">
+                                <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="promotions.png" alt="Logo"style="width: 64px;
+                                            height: 64px;
+                                            object-fit: contain;margin-top:40px;margin-left:10px">
+                                        </div>
+                                        <div class="col-md-8">
+                                                <div class="text"style="text-align:right;margin-right:20px;margin-top:40px">
+                                                    <h5>23</h5>
+                                                    <p>promotions</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="rectangle4">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="repeat.png" alt="Logo"style="width: 64px;
+                                        height: 64px;
+                                        object-fit: contain;margin-top:40px;margin-left:10px">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="text"style="text-align:right;margin-right:20px;margin-top:10px">
+                                            <h5>12</h5>
+                                            <p>Hired</p>
+                                            <h5>2</h5>
+                                            <p>Left</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                    </div>
+                    
+                </div>
+                <div class="row" style="margin-top:20px">
+                    <div class="col-md-6">
+                        <div class="rectangle5">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8"style="margin-top:50px">
+                                    <div class="vector">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Simple_bar_chart.svg/1280px-Simple_bar_chart.svg.png" alt="" style="width:400px">
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rectangle6">
+                             <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8"style="margin-top:50px">
+                                    <div class="vector">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Simple_bar_chart.svg/1280px-Simple_bar_chart.svg.png" alt="" style="width: 400px">
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="row"style="margin-top:20px;margin-bottom:60px">
+                    <div class="col-md-6">
+                        <div class="rectangle7">
+                             <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8"style="margin-top:50px">
+                                    <div class="vector">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Simple_bar_chart.svg/1280px-Simple_bar_chart.svg.png" alt=""style="width: 400px;margin-left:-20px">
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rectangle8">
+                                 <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8"style="margin-top:50px">
+                                    <div class="vector">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Simple_bar_chart.svg/1280px-Simple_bar_chart.svg.png" alt=""style="width:400px">
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+    </body>
+
+
+    </html>

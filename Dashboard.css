@@ -1,0 +1,116 @@
+.search input[type=text] {
+    width: 90%;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+}
+
+.name input[type=text] {
+    width: 90%;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+}
+/* rectangle logo */
+.rectangle {
+    width: 200px;
+    height: 64px;
+    background-color: var(--orange);
+}
+
+/* rectangle atas  */
+.rectangle1 {
+    width: 248px;
+    height: 144px;
+    border-radius: 4px;
+    background-color: var(--orange);
+}
+.rectangle2 {
+    width: 248px;
+    height: 144px;
+    border-radius: 4px;
+    background-color: #a070c1;
+}
+.rectangle3 {
+    width: 248px;
+    height: 144px;
+    border-radius: 4px;
+    background-color: #dd78aa;
+}
+.rectangle4 {
+    width: 248px;
+    height: 144px;
+    border-radius: 4px;
+    background-color: #fb9092;
+}
+
+/* rectangle body */
+.rectangle5{
+  width: 540px;
+  height: 360px;
+  border-radius: 4px;
+  background-color:#e93ada;
+  margin-left: -42px;
+}
+
+.rectangle6{
+    width: 540px;
+    height: 360px;
+    border-radius: 4px;
+    background-color: #41d1db;
+    margin-left: -20px;
+  }
+
+.rectangle7{
+    width: 540px;
+    height: 360px;
+    border-radius: 4px;
+    background-color:#41d1db;
+    margin-left:-42px;
+}
+
+.rectangle8{
+    width: 540px;
+    height: 360px;
+    border-radius: 4px;
+    background-color:#e93ada;
+    margin-left: -20px;
+}
+
+/* vector body */
+.vector{
+    width: 355px;
+    height: 250px;
+}
+
+.line {
+    width:1;
+    height:480;
+    background-color: #c4c4c4;
+}
+
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration:none;
+        font-size: 15px;
+        color: #ffffff ;
+        display: block;
+        text-align:left;
+        
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
